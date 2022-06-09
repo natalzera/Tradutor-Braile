@@ -1,2 +1,2 @@
-# Tradutor-Braile
-Tradutor de Braile para texto, substituindo as combinações de pontos em letras no local da imagem
+# Tradutor de braile em imagens
+O projeto consiste em desenvolver um programa em linguagem python, com auxílio das bibliotecas numpy, imageio e outras, que receba uma imagem de input, identifique se existem escritas em braile e, se possuir, traduzi-las para caracteres alfa-numéricos.
