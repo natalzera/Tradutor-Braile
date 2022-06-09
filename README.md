@@ -25,3 +25,8 @@ Deverá ser tratada para:
 ```
 "accessible entrance"
 ```
+
+## Algoritmo
+Para a tradução dos caracteres em braile para algum da tabela ASCII, deve-se implementar no código a conversão de todas as letras do alfabeto:
+
+![alfabeto em braile](https://3.bp.blogspot.com/_WzSKE_kNo6M/TJfrPiJLhkI/AAAAAAAAAHk/ETZjIgeuZnk/s1600/braille.jpg)
