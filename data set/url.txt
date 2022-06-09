@@ -1,1 +1,0 @@
-https://www.kaggle.com/datasets/changjianli/braille-dataset-for-scene-text-recognition
