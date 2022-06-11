@@ -1,6 +1,6 @@
 # Tradutor de braile em imagens
 ## Objetivo
-O projeto consiste em desenvolver um programa em linguagem **python**, com auxílio das bibliotecas **numpy**, **imageio** e outras, que receba uma imagem de input, identifica se existem escritas em braile e, se possuir, traduzi-las para caracteres alfa-numéricos.
+O projeto consiste em desenvolver um programa em linguagem **python**, com auxílio das bibliotecas **numpy**, **imageio**, **skimage** etc, que receba uma imagem de input, identifica se existem escritas em braile e, se possuir, traduzi-las para caracteres alfa-numéricos.
 
 A seguir, um exemplo do tipo de imagem que o programa irá ler e sua respectiva saída esperada:
 
@@ -10,7 +10,7 @@ A seguir, um exemplo do tipo de imagem que o programa irá ler e sua respectiva 
 ## Banco de imagens
 Para testar e aplicar a funcionalidade do programa, utilizou-se de um banco de imagens armazenado na comunidade [Keggle](https://www.kaggle.com/), que pode ser visto publicamente clicando [aqui](https://www.kaggle.com/datasets/changjianli/braille-dataset-for-scene-text-recognition) ou copiando o link escrito em "dataset.txt" no próprio repositório.
 
-Visto isso, é importante notar que neste banco de imagens escolhido, devido sua principal aplicação ser para treino e teste de algoritmos de aprendizado de máquina, as pastas de Imagens e de suas respectivas Labels estão divididas em subpastas "train" e "val". Contudo, para este projeto, independemos dessa subdivisão já que não utilizaremos nenhum algoritmo de aprendizado de máquina. Portanto, podemos escolher livremente qualquer imagem do banco desde que selecionamos corretamente a label correspondente para validação das saídas do programa.
+É importante notar também a subdivisão das pastas das imagens e labels em "train" e "val", que serão utilizadas respectivamente para o treino e o teste da rede neural implementada no código.
 
 ### Labels
 Em particular, as labels obtidas no banco das imagens guardam muitas informações desnecessárias para o projeto. Portanto passarão por um tratamento antes de serem realmente consideradas no algoritmo.
@@ -27,6 +27,5 @@ Deverá ser tratada para:
 ```
 
 ## Algoritmo
-Para a tradução dos caracteres em braile para algum da tabela ASCII, deve-se implementar no código a conversão de todas as letras do alfabeto:
 
 ![alfabeto em braile](https://3.bp.blogspot.com/_WzSKE_kNo6M/TJfrPiJLhkI/AAAAAAAAAHk/ETZjIgeuZnk/s1600/braille.jpg)
