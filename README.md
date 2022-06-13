@@ -10,8 +10,6 @@ A seguir, um exemplo do tipo de imagem que o programa irá ler e sua respectiva 
 ## Banco de imagens
 Para testar e aplicar a funcionalidade do programa, utilizou-se de um banco de imagens armazenado na comunidade [Keggle](https://www.kaggle.com/), que pode ser visto publicamente clicando [aqui](https://www.kaggle.com/datasets/changjianli/braille-dataset-for-scene-text-recognition) ou copiando o link escrito em "dataset.txt" no próprio repositório.
 
-É importante notar também a subdivisão das pastas das imagens e labels em "train" e "val", que serão utilizadas respectivamente para o treino e o teste da rede neural implementada no código.
-
 ### Labels
 Em particular, as labels obtidas no banco das imagens guardam muitas informações desnecessárias para o projeto. Portanto passarão por um tratamento antes de serem realmente consideradas no algoritmo.
 
