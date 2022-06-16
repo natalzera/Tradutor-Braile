@@ -56,13 +56,11 @@ A seguir, as letras extraídas da imagem processada:
 
 Dado as imagens de cada letra retiradas da imagem de entrada, iremos comparar cada uma com as imagens de referência para todas as 26 letras (do 2° banco de imagens utilizado) utilizando comparação por **textura**.
 
-A seguir um exemplo das imagens e labels dadas ao algoritmo para a comparação:
+A seguir, um exemplo das imagens e labels dadas ao algoritmo para a tradução:
 
 ![alfabeto em braile](https://3.bp.blogspot.com/_WzSKE_kNo6M/TJfrPiJLhkI/AAAAAAAAAHk/ETZjIgeuZnk/s1600/braille.jpg)
 
-Após a comparação e definição de quais imagens de referência ela se aprixima mais, podemos traduzir a letra em braile da imagem para um caractere do alfabeto.
-
-Fazendo esse processo com todas as imagens das letras retirada da imagem de entrada e concatenando as saídas, obtemos a saída final do programa:
+Após a comparação e definição de quais imagens de referência ela se aprixima mais, podemos traduzir a letra em braile da imagem para um caractere do alfabeto. Fazendo esse processo com todas as imagens das letras retirada da imagem de entrada e concatenando as saídas, obtemos a saída final do programa:
 
 #### "do not touch"
 
