@@ -53,4 +53,17 @@ A seguir, as letras extraídas da imagem processada:
 ![letra em braile em preto e branco](https://github.com/natalzera/Tradutor-Braile/blob/main/Parcial/letters/24.jpg)
 
 ### Parte 2: Tradução das letras
+
+Dado as imagens de cada letra retiradas da imagem de entrada, iremos comparar cada uma com as imagens de referência para todas as 26 letras (do 2° banco de imagens utilizado) utilizando comparação por **textura**.
+
+A seguir um exemplo das imagens e labels dadas ao algoritmo para a comparação:
+
 ![alfabeto em braile](https://3.bp.blogspot.com/_WzSKE_kNo6M/TJfrPiJLhkI/AAAAAAAAAHk/ETZjIgeuZnk/s1600/braille.jpg)
+
+Após a comparação e definição de quais imagens de referência ela se aprixima mais, podemos traduzir a letra em braile da imagem para um caractere do alfabeto.
+
+Fazendo esse processo com todas as imagens das letras retirada da imagem de entrada e concatenando as saídas, obtemos a saída final do programa:
+
+#### "do not touch"
+
+Além disso, é possível debugar o programa utilizando uma função de comparação da saída dele com a label referente à imagem do 1° banco.
