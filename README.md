@@ -46,10 +46,11 @@ A seguir, um exemplo das letras extraídas da imagem processada:
 ![letra em braile em preto e branco](https://github.com/natalzera/Tradutor-Braile/blob/main/Parcial/letters/10.jpg)
 ![letra em braile em preto e branco](https://github.com/natalzera/Tradutor-Braile/blob/main/Parcial/letters/11.jpg)
 ![letra em braile em preto e branco](https://github.com/natalzera/Tradutor-Braile/blob/main/Parcial/letters/12.jpg)
-![letra em braile em preto e branco](https://github.com/natalzera/Tradutor-Braile/blob/main/Parcial/letters/13.jpg)
 ![letra em braile em preto e branco](https://github.com/natalzera/Tradutor-Braile/blob/main/Parcial/letters/20.jpg)
 ![letra em braile em preto e branco](https://github.com/natalzera/Tradutor-Braile/blob/main/Parcial/letters/21.jpg)
 ![letra em braile em preto e branco](https://github.com/natalzera/Tradutor-Braile/blob/main/Parcial/letters/22.jpg)
+![letra em braile em preto e branco](https://github.com/natalzera/Tradutor-Braile/blob/main/Parcial/letters/23.jpg)
+![letra em braile em preto e branco](https://github.com/natalzera/Tradutor-Braile/blob/main/Parcial/letters/24.jpg)
 
 ### Parte 2: Tradução das letras
 ![alfabeto em braile](https://3.bp.blogspot.com/_WzSKE_kNo6M/TJfrPiJLhkI/AAAAAAAAAHk/ETZjIgeuZnk/s1600/braille.jpg)
