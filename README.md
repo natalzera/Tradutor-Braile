@@ -39,7 +39,7 @@ A seguir, um exemplo de imagem de input após o pré-processamento:
 
 Após a imagem ser pré-processada, o algoritmo aplicará uma função que irá separa-la em sub-imagens ordenadamente, em que cada uma guarda uma letra em braile escrita na imagem total.
 
-A seguir, um exemplo das letras extraídas da imagem processada:
+A seguir, as letras extraídas da imagem processada:
 
 ![letra em braile em preto e branco](https://github.com/natalzera/Tradutor-Braile/blob/main/Parcial/letters/00.jpg)
 ![letra em braile em preto e branco](https://github.com/natalzera/Tradutor-Braile/blob/main/Parcial/letters/01.jpg)
