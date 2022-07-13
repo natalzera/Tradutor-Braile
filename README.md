@@ -55,7 +55,7 @@ A seguir, as letras extraídas da imagem processada:
 Além disso, considerando as distâncias entre as letras na imagem, esta mesma função calcula e retorna a quantidade de letras que cada palavra vai possuir (em ordem).
 
 A seguir, o vetor de tamanho das palavras calculado no exemplo acima:
-```
+```Python3
 [2, 3, 5]
 ```
 
