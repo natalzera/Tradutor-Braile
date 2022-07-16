@@ -26,6 +26,8 @@ Deverá ser tratada para:
 "accessible entrance"
 ```
 
+Utilizando do **labels.py** no projeto então, fazemos a tradução das labels e podemos utilizá-las para debug do código. Mas vale lembrar que este não é o foco do projeto, é apenas uma automação de um processo secundário em nosso programa (poderíamos muito bem fazer a tradução manualmente ou na internet).
+
 ## Algoritmo
 
 ### Parte 1: Pré-processamento
