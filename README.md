@@ -8,11 +8,9 @@ A seguir, um exemplo do tipo de imagem que o programa irá ler e sua respectiva 
 #### "do not touch"
 
 ## Banco de imagens
-Para testar e aplicar a funcionalidade do programa, utilizou-se de imagens contidas em um banco armazenado na comunidade [Keggle](https://www.kaggle.com/), que pode ser visto publicamente clicando [aqui](https://www.kaggle.com/datasets/changjianli/braille-dataset-for-scene-text-recognition) ou copiando o primeiro link escrito em "dataset.txt" no próprio repositório.
+Para testar e aplicar a funcionalidade do programa, utilizou-se de imagens contidas em um banco armazenado na comunidade [Keggle](https://www.kaggle.com/), que pode ser visto publicamente clicando [aqui](https://www.kaggle.com/datasets/changjianli/braille-dataset-for-scene-text-recognition) ou copiando o link escrito em "dataset.txt" no próprio repositório.
 
-Sobre este banco de imagens, é importante notar que, por ser destinado ao treino e teste de redes neurais, as pastas das imagens e labels estão divididas em subpastas "train" e "val", mas não será levado em conta essa divisão para este programa. Além disso, é necessário uma verificação da legibilibilidade para a tradução antes de realmete fazê-la, uma vez que algumas imagens do banco estão muito poluídas de outros elementos, o que impossibilita a tradução sem usar do auxílio de uma rede neural. Portanto, as imagens que podem ser utilizadas no programa devem ser realmente selecionadas manualmente da internet ou deste banco.
-
-Outro banco de imagens utilizado para o algoritmo identificar as letras, também obtido no Keggle, pode ser acessado publicamente [aqui](https://www.kaggle.com/datasets/adviksharma/braille-images-for-english-characters) ou copiando o segundo link escrito em "dataset.txt" no próprio repositório. As imagens de cada letra obtidas nele poderão ser tratadas para se comparar com as letras extraídas de imagens do primeiro banco.
+Sobre este banco de imagens, é importante notar que, por ser destinado ao treino e teste de redes neurais, as pastas das imagens e labels estão divididas em subpastas "train" e "val", mas não será levado em conta essa divisão para este programa. Além disso, é necessário uma verificação da legibilibilidade para a tradução antes de realmete fazê-la, uma vez que algumas imagens do banco estão muito poluídas de outros elementos, o que impossibilita a tradução sem usar do auxílio de uma rede neural. Portanto, as imagens que podem ser utilizadas no programa devem ser realmente selecionadas manualmente deste banco.
 
 ### Labels
 Em particular, as labels obtidas no primeiro banco das imagens guardam muitas informações desnecessárias para o projeto. Portanto passarão por um tratamento antes de serem realmente consideradas no algoritmo.
@@ -30,13 +28,14 @@ Deverá ser tratada para:
 
 ## Algoritmo
 
-### Parte 1: Extração das letras em braile
+### Parte 1: Pré-processamento
 Primeiramente, o código irá receber como input alguma imagem selecionada do 1° banco de imagens (ou qualquer outra desejada pelo usuário) e **pré-processá-la** (convertendo para escala de cinza, binarizando-a e aplicando morfologia para evidenciar os círculos), dessa forma teremos nela apenas as escritas em braile evidentes na imagem.
 
 A seguir, um exemplo de imagem de input após o pré-processamento:
 
 ![escritas em braile em preto e branco](https://github.com/natalzera/Tradutor-Braile/blob/main/Parcial/proc_img.jpg)
 
+### Parte 2: Extração das letras em braile
 Após a imagem ser pré-processada, o algoritmo aplicará uma função que irá separa-la em sub-imagens ordenadamente, em que cada uma guarda uma letra em braile escrita na imagem total. Essa separação é feita considerando as distâncias entre os pontos presentes na imagem, agrupando os mais próximos e separando como letras diferentes os mais distantes.
 
 A seguir, as letras extraídas da imagem processada:
@@ -59,9 +58,9 @@ A seguir, o vetor de tamanho das palavras calculado no exemplo acima:
 [2, 3, 5]
 ```
 
-### Parte 2: Tradução das letras
+### Parte 3: Tradução das palavras
 
-Dado as imagens de cada letra retiradas da imagem de entrada, iremos comparar cada uma com as imagens de referência para todas as 26 letras (do 2° banco de imagens utilizado) utilizando comparação por **textura**.
+Dado as imagens de cada letra retiradas da imagem de entrada, iremos comparar cada uma com as imagens de referência para todas as 26 letras do alfabeto (do 2° banco de imagens utilizado) utilizando comparação por **textura**.
 
 A seguir, um exemplo das imagens e labels dadas ao algoritmo para a tradução:
 
