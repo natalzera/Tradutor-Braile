@@ -26,12 +26,12 @@ Deverá ser tratada para:
 accessible entrance
 ```
 
-Utilizando do **labels.py** no projeto então, fazemos a tradução das labels e podemos utilizá-las para debug do código. Mas vale lembrar que este não é o foco do projeto, é apenas uma automação de um processo secundário em nosso programa (poderíamos muito bem fazer a tradução manualmente ou na internet).
+Utilizando do **labels.py** (na pasta "dataset" do projeto), fazemos a tradução das labels e podemos utilizá-las para debug do código. Mas vale lembrar que este não é o foco do projeto, é apenas uma automação de um processo secundário em nosso programa (poderíamos muito bem fazer a tradução manualmente ou na internet).
 
 ## Algoritmo
 
 ### Parte 1: Pré-processamento
-Primeiramente, o código irá receber como input alguma imagem selecionada do 1° banco de imagens (ou qualquer outra desejada pelo usuário) e **pré-processá-la** (convertendo para escala de cinza, binarizando-a e aplicando morfologia para evidenciar os círculos), dessa forma teremos nela apenas as escritas em braile evidentes na imagem.
+Primeiramente, o código irá receber como input a imagem selecionada e **pré-processá-la** (convertendo para escala de cinza, binarizando-a e aplicando morfologia para evidenciar os círculos), dessa forma teremos nela apenas as escritas em braile evidentes na imagem.
 
 A seguir, um exemplo de imagem de input após o pré-processamento:
 
