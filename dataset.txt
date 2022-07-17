@@ -1,5 +1,0 @@
-1° banco de imagens (input):
-https://www.kaggle.com/datasets/changjianli/braille-dataset-for-scene-text-recognition
-
-2° banco de imagens (labels das letras):
-https://www.kaggle.com/datasets/adviksharma/braille-images-for-english-characters
