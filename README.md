@@ -8,7 +8,7 @@ A seguir, um exemplo do tipo de imagem que o programa irá ler e sua respectiva 
 #### "do not touch"
 
 ## Banco de imagens
-Para testar e aplicar a funcionalidade do programa, utilizou-se de imagens contidas em um banco armazenado na comunidade [Keggle](https://www.kaggle.com/), que pode ser visto publicamente clicando [aqui](https://www.kaggle.com/datasets/changjianli/braille-dataset-for-scene-text-recognition) ou copiando o link escrito em "dataset.txt" no próprio repositório.
+Para testar e aplicar a funcionalidade do programa, utilizou-se de imagens contidas em um banco armazenado na comunidade [Keggle](https://www.kaggle.com/), que pode ser visto publicamente clicando [aqui](https://www.kaggle.com/datasets/changjianli/braille-dataset-for-scene-text-recognition) ou copiando o link escrito em "link.txt" na pasta "dataset".
 
 Sobre este banco de imagens, é importante notar que, por ser destinado ao treino e teste de redes neurais, as pastas das imagens e labels estão divididas em subpastas "train" e "val", mas não será levado em conta essa divisão para este programa. Além disso, é necessário uma verificação da legibilibilidade para a tradução antes de realmete fazê-la, uma vez que algumas imagens do banco estão muito poluídas de outros elementos, o que impossibilita a tradução sem usar do auxílio de uma rede neural. Portanto, as imagens que podem ser utilizadas no programa devem ser realmente selecionadas manualmente deste banco.
 
@@ -23,7 +23,7 @@ A seguir, um exemplo de label disponível no dataset:
 ```
 Deverá ser tratada para:
 ```
-"accessible entrance"
+accessible entrance
 ```
 
 Utilizando do **labels.py** no projeto então, fazemos a tradução das labels e podemos utilizá-las para debug do código. Mas vale lembrar que este não é o foco do projeto, é apenas uma automação de um processo secundário em nosso programa (poderíamos muito bem fazer a tradução manualmente ou na internet).
