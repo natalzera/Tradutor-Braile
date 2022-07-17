@@ -5,7 +5,9 @@ O projeto consiste em desenvolver um programa em linguagem **python**, com auxí
 A seguir, um exemplo do tipo de imagem que o programa irá ler e sua respectiva saída esperada:
 
 ![caneca com escritas em braile](https://github.com/natalzera/Tradutor-Braile/blob/main/Parcial/test.jpg)
-#### "do not touch"
+```
+do not touch
+```
 
 ## Banco de imagens
 Para testar e aplicar a funcionalidade do programa, utilizou-se de imagens contidas em um banco armazenado na comunidade [Keggle](https://www.kaggle.com/), que pode ser visto publicamente clicando [aqui](https://www.kaggle.com/datasets/changjianli/braille-dataset-for-scene-text-recognition) ou copiando o link escrito em "link.txt" na pasta "dataset".
@@ -62,14 +64,16 @@ A seguir, o vetor de tamanho das palavras calculado no exemplo acima:
 
 ### Parte 3: Tradução das palavras
 
-Dado as imagens de cada letra retiradas da imagem de entrada, iremos comparar cada uma com as imagens de referência para todas as 26 letras do alfabeto (do 2° banco de imagens utilizado) utilizando comparação por **textura**.
+Dado as imagens de cada letra retiradas da imagem de entrada, iremos comparar cada uma com as imagens de referência para todas as 26 letras do alfabeto utilizando comparação pelas diferenças de pixel a pixel nas imagens (o próprio RSME utilizado nos Assignments) e por **textura** (descritores de Haralick).
 
 A seguir, um exemplo das imagens e labels dadas ao algoritmo para a tradução:
 
 ![alfabeto em braile](https://3.bp.blogspot.com/_WzSKE_kNo6M/TJfrPiJLhkI/AAAAAAAAAHk/ETZjIgeuZnk/s1600/braille.jpg)
 
-Após a comparação e definição de quais imagens de referência ela se aprixima mais, podemos traduzir a letra em braile da imagem para um caractere do alfabeto. Fazendo esse processo com todas as imagens das letras retirada da imagem de entrada e concatenando as saídas, obtemos a saída final do programa:
+Após a comparação e definição de quais imagens de referência ela se aprixima mais, podemos traduzir a letra em braile da imagem para um caractere do alfabeto. Fazendo esse processo com todas as imagens das letras retirada da imagem de entrada e concatenando as saídas (levando em conta o tamanho das palavras para posicionar os caracteres de espaço), obtemos a saída final do programa:
 
-#### "do not touch"
+```
+do not touch
+```
 
-Além disso, é possível debugar o programa utilizando uma função de comparação da saída dele com a label referente à imagem do 1° banco.
+## Testes do algoritmo
