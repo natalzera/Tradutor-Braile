@@ -78,3 +78,4 @@ do not touch
 
 ## Testes do algoritmo
 Na pasta "output_tests", foram testadas 5 imagens do dataset. Em que cada pasta de test existe o arquivo "img.jpg" (a imagem de input), o arquivo "proc_img.jpg" (a imagem de input após a etapa de pré processamento), o arquivo "len.txt" (o vetor dos tamanhos das palavras na frase em braile a ser traduzida) e a pasta "letters" (onde estão as sub-imagens de todas as letras identificadas na segmentação).
+A saída final do programa (a tradução definitiva da imagem em braile) está em out.txt, presente apenas no 1° teste.
