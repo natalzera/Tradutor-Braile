@@ -64,7 +64,7 @@ A seguir, o vetor de tamanho das palavras calculado no exemplo acima:
 
 ### Parte 3: Tradução das palavras
 
-Dado as imagens de cada letra retiradas da imagem de entrada, iremos comparar cada uma com as imagens de referência para todas as 26 letras do alfabeto utilizando comparação pelas diferenças de pixel a pixel nas imagens (o próprio RSME utilizado nos Assignments) e por **textura** (descritores de Haralick).
+Dado as imagens de cada letra retiradas da imagem de entrada, iremos comparar cada uma com as imagens de referência para todas as 26 letras do alfabeto (na pasta "alfabeto" dentro de "principal" - a pasta referente à entrega final do projeto) utilizando comparação pelas diferenças de pixel a pixel nas imagens (o próprio RSME utilizado nos Assignments) e por **textura** (descritores de Haralick).
 
 A seguir, um exemplo das imagens e labels dadas ao algoritmo para a tradução:
 
@@ -77,3 +77,4 @@ do not touch
 ```
 
 ## Testes do algoritmo
+Na pasta "output_tests", foram testadas 5 imagens do dataset. Em que cada pasta de test existe o arquivo "img.jpg" (a imagem de input), o arquivo "proc_img.jpg" (a imagem de input após a etapa de pré processamento), o arquivo "len.txt" (o vetor dos tamanhos das palavras na frase em braile a ser traduzida) e a pasta "letters" (onde estão as sub-imagens de todas as letras identificadas na segmentação).
